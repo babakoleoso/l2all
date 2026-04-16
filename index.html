@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SGI | Assignment #2 – Baba Ifa Karade</title>
+
+  <style>
+    :root{
+      --bg:#07070d;
+      --panel:#141425;
+      --text:#f5f0e6;
+      --muted:#c9c1b2;
+      --gold:#d4af37;
+      --purple:#6f4bd8;
+      --glow:0 0 18px rgba(146,114,255,.18);
+    }
+
+    body{
+      margin:0;
+      font-family:Georgia, serif;
+      background:linear-gradient(180deg,#06060a,#101019);
+      color:var(--text);
+    }
+
+    .wrap{width:94%; max-width:1200px; margin:auto;}
+
+    /* HEADER */
+    .top{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:12px 0;
+    }
+
+    .logo{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .logo img{
+      width:55px;
+      border-radius:50%;
+      box-shadow:var(--glow);
+    }
+
+    .logo h2{margin:0;}
+
+    /* TOP CARDS */
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(6,1fr);
+      gap:10px;
+      margin:20px 0;
+    }
+
+    .card-link{
+      text-align:center;
+      padding:10px;
+      border-radius:14px;
+      border:1px solid rgba(212,175,55,.2);
+      background:linear-gradient(145deg,rgba(111,75,216,.15),#111);
+      text-decoration:none;
+      color:#fff;
+      font-size:.9rem;
+    }
+
+    .card-link:hover{
+      border-color:var(--gold);
+      box-shadow:var(--glow);
+    }
+
+    /* HERO */
+    .hero{
+      background:var(--panel);
+      border-radius:20px;
+      padding:30px;
+      box-shadow:0 10
